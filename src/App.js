@@ -1,15 +1,9 @@
 import './App.css';
+import MenuBar from './components/MenuBar';
 
 function App() {
   return (
-    <>
-      <div className="box-border border-##00a79d border-2 w-1/2 h-screen md:hidden shadow-2xl shadow-cyan-700">
-        Side Menu item
-      </div>
-      <div className="hidden md:block">
-        Navbar
-      </div>
-    </>
+    <MenuBar />
   );
 }
 
