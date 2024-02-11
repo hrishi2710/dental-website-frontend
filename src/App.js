@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 import './App.css';
 import MenuItemComponent from './components/MenuBar';
+import Header from './components/Header';
 
 function App() {
   let [showSideDrawerMenu, setShowSideDrawerMenu] = useState(false);
@@ -12,7 +13,8 @@ function App() {
   }
 
   return (
-    <div>
+    <div className='flex flex-row justify-items-end'>
+      <Header />
       <div className="box-border border-black border-0 md:hidden p-5 w-min" onClick={toggleSideDrawerHandler}>
         <FontAwesomeIcon icon={faBars} />
       </div>
