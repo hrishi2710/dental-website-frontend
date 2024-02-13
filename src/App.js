@@ -13,11 +13,11 @@ function App() {
   }
 
   return (
-    <div className='flex flex-row justify-items-end'>
+    <div className='flex flex-row justify-between'>
       <Header />
-      <div className="box-border border-black border-0 md:hidden p-5 w-min" onClick={toggleSideDrawerHandler}>
+      {!showSideDrawerMenu && <div className="box-border border-black border-0 md:hidden p-5 w-min" onClick={toggleSideDrawerHandler}>
         <FontAwesomeIcon icon={faBars} />
-      </div>
+      </div>}
       <MenuItemComponent show={showSideDrawerMenu} />
     </div>
   );
