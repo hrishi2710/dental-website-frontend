@@ -4,6 +4,7 @@ import { useState } from 'react';
 import './App.css';
 import MenuItemComponent from './components/MenuBar';
 import Header from './components/Header';
+import SideDrawerMenu from './components/menu/SideDrawerMenu';
 
 function App() {
   let [showSideDrawerMenu, setShowSideDrawerMenu] = useState(false);
@@ -12,13 +13,30 @@ function App() {
     setShowSideDrawerMenu(!showSideDrawerMenu);
   }
 
+  let closeSideDrawerHandler = () => {
+    setShowSideDrawerMenu(false);
+  }
+
+  let openSideDrawerHandler = () => {
+    setShowSideDrawerMenu(true);
+  }
+
   return (
-    <div className='flex flex-row justify-between'>
-      <Header />
-      {!showSideDrawerMenu && <div className="box-border border-black border-0 md:hidden p-5 w-min" onClick={toggleSideDrawerHandler}>
-        <FontAwesomeIcon icon={faBars} />
-      </div>}
-      <MenuItemComponent show={showSideDrawerMenu} />
+    <div className='relative'>
+      <div className="flex flex-col relative">
+        <div>
+          <Header openSideDrawerHandler={openSideDrawerHandler} />
+        </div>
+        {/* Added onClick handler on this div just to make sure that it should close the side drawer only.
+        TODO: How it will behave when the caraousel, services etc. is a link and we want them clickable? */}
+        <div onClick={closeSideDrawerHandler}>
+          <div>Caraousel</div>
+          <div>Services</div>
+          <div>Testimonials</div>
+          <div>Contact</div>
+        </div>
+      </div>
+      <SideDrawerMenu show={showSideDrawerMenu} />
     </div>
   );
 }

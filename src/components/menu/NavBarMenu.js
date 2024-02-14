@@ -6,7 +6,7 @@ const NavBarMenu = () => {
             <div className="hidden md:block box-border border-#00a79d border-2 w-full">
                 <div className="flex flex-row justify-evenly">
                     {menuItmes.map((menuItem) => {
-                        return <div>{menuItem}</div>
+                        return <div key={menuItem}>{menuItem}</div>
                     })}
                 </div>
             </div>
