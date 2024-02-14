@@ -1,17 +1,10 @@
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 import './App.css';
-import MenuItemComponent from './components/MenuBar';
 import Header from './components/Header';
 import SideDrawerMenu from './components/menu/SideDrawerMenu';
 
 function App() {
   let [showSideDrawerMenu, setShowSideDrawerMenu] = useState(false);
-
-  let toggleSideDrawerHandler = () => {
-    setShowSideDrawerMenu(!showSideDrawerMenu);
-  }
 
   let closeSideDrawerHandler = () => {
     setShowSideDrawerMenu(false);
