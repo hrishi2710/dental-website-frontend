@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import SideDrawerMenu from './components/menu/SideDrawerMenu';
+import BookAppointMentButton from './components/BookAppointmentButton';
 
 function App() {
   let [showSideDrawerMenu, setShowSideDrawerMenu] = useState(false);
@@ -30,6 +31,7 @@ function App() {
         </div>
       </div>
       <SideDrawerMenu show={showSideDrawerMenu} />
+      <BookAppointMentButton />
     </div>
   );
 }
