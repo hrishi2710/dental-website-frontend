@@ -18,7 +18,7 @@ function App() {
   return (
     <div className='relative'>
       <div className="flex flex-col relative">
-        <div>
+        <div className='w-3/4 m-auto'>
           <Header openSideDrawerHandler={openSideDrawerHandler} />
         </div>
         {/* Added onClick handler on this div just to make sure that it should close the side drawer only.
@@ -31,7 +31,9 @@ function App() {
         </div>
       </div>
       <SideDrawerMenu show={showSideDrawerMenu} />
-      <BookAppointMentButton />
+      <div className='fixed bottom-0 left-1/4 z-5 md:hidden'>
+        <BookAppointMentButton />
+      </div>
     </div>
   );
 }

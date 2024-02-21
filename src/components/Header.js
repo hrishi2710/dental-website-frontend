@@ -2,6 +2,7 @@ import Logo from '../assets/logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import NavBarMenu from './menu/NavBarMenu';
+import BookingBar from './BookingBar';
 const Header = (props) => {
 
     return (
@@ -14,6 +15,7 @@ const Header = (props) => {
                     <FontAwesomeIcon icon={faBars} />
                 </div>
                 <div className='hidden md:block w-screen'>
+                    <BookingBar />
                     <NavBarMenu />
                 </div>
             </div>
