@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Carousel from './components/Carousel';
 import SideDrawerMenu from './components/menu/SideDrawerMenu';
+import Services from './components/Services/Services';
 
 function App() {
   let [showSideDrawerMenu, setShowSideDrawerMenu] = useState(false);
@@ -21,6 +22,7 @@ function App() {
         <div className='w-full'>
           <Header openSideDrawerHandler={openSideDrawerHandler} />
           <Carousel />
+          <Services />
         </div>
         {/* Added onClick handler on this div just to make sure that it should close the side drawer only.
         TODO: How it will behave when the caraousel, services etc. is a link and we want them clickable? */}
