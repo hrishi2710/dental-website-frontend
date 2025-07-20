@@ -46,7 +46,7 @@ const Carousel = () => {
       })}
       {/* Left arrow */}
       <button
-        className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white/70 hover:bg-white text-2xl rounded-full p-2 shadow-md z-20"
+        className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white/70 hover:bg-white text-2xl rounded-full p-2 shadow-md z-10"
         onClick={goToPrev}
         aria-label="Previous"
       >
@@ -54,14 +54,14 @@ const Carousel = () => {
       </button>
       {/* Right arrow */}
       <button
-        className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white/70 hover:bg-white text-2xl rounded-full p-2 shadow-md z-20"
+        className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white/70 hover:bg-white text-2xl rounded-full p-2 shadow-md z-10"
         onClick={goToNext}
         aria-label="Next"
       >
         &#8594;
       </button>
       {/* Dots */}
-      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex space-x-2 z-20">
+      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex space-x-2 z-10">
         {images.map((_, idx) => (
           <button
             key={idx}
