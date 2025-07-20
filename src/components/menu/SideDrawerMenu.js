@@ -1,5 +1,5 @@
+import menuItmes from './menuItems';
 const SideDrawerMenu = (props) => {
-    let menuItmes = ["Home", "Services", "Case History", "Blog", "Testimonials", "Contact Us"];
     return (
         <>
             {/* The side drawer to be shown upto medium sized screens */}

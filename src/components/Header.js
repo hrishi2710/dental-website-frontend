@@ -1,7 +1,7 @@
 import LogoSection from './LogoSection';
 import ContactInfo from './ContactInfo';
 import BookAppointmentButton from './BookAppointmentButton';
-import NavBarMenu from './NavBarMenu';
+import NavBarMenu from './menu/NavBarMenu';
 import MobileBookButton from './MobileBookButton';
 
 const Header = (props) => (
