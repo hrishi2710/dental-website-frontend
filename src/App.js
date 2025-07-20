@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
+import Carousel from './components/Carousel';
 import SideDrawerMenu from './components/menu/SideDrawerMenu';
 
 function App() {
@@ -19,11 +20,11 @@ function App() {
       <div className="flex flex-col relative">
         <div className='w-full'>
           <Header openSideDrawerHandler={openSideDrawerHandler} />
+          <Carousel />
         </div>
         {/* Added onClick handler on this div just to make sure that it should close the side drawer only.
         TODO: How it will behave when the caraousel, services etc. is a link and we want them clickable? */}
         <div onClick={closeSideDrawerHandler}>
-          <div>Caraousel</div>
           <div>Services</div>
           <div>Testimonials</div>
           <div>Contact</div>
