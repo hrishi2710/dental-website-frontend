@@ -1,9 +1,7 @@
-let BookAppointmentButton = (props) => {
-    return (
-        <button className="box-border border-2 bg-teal-600 text-white shadow-2xl text-base p-3 rounded-lg animate-bounce-css">
-            Book an appointment
-        </button>
-    )
-}
+const BookAppointmentButton = () => (
+  <button className="bg-[#b97a56] hover:bg-[#a05f3c] text-white font-semibold px-6 py-2 rounded-lg shadow-md transition-colors">
+    Book appointment
+  </button>
+);
 
 export default BookAppointmentButton;
