@@ -2,7 +2,6 @@ import { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import SideDrawerMenu from './components/menu/SideDrawerMenu';
-import BookAppointMentButton from './components/BookAppointmentButton';
 
 function App() {
   let [showSideDrawerMenu, setShowSideDrawerMenu] = useState(false);
@@ -30,6 +29,9 @@ function App() {
           <div>Contact</div>
         </div>
       </div>
+      {showSideDrawerMenu && (
+        <div className="fixed inset-0 z-10 backdrop-blur-sm md:hidden" onClick={closeSideDrawerHandler}></div>
+      )}
       <SideDrawerMenu show={showSideDrawerMenu} onClose={closeSideDrawerHandler} />
     </div>
   );
