@@ -30,7 +30,7 @@ function App() {
           <div>Contact</div>
         </div>
       </div>
-      <SideDrawerMenu show={showSideDrawerMenu} />
+      <SideDrawerMenu show={showSideDrawerMenu} onClose={closeSideDrawerHandler} />
     </div>
   );
 }
