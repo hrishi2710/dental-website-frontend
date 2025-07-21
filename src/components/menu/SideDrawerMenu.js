@@ -26,11 +26,11 @@ const SideDrawerMenu = (props) => {
             {/* The side drawer to be shown up to medium sized screens */}
             {props.show && (
                 <div
-                    className={`box-border border-#00a79d border-2 w-[90vw] h-screen md:hidden shadow-2xl shadow-cyan-700 fixed top-0 right-0 z-50 backdrop-blur-lg animate-${animate}`}
+                    className={`box-border border-#00a79d border-2 w-[90vw] h-screen md:hidden shadow-2xl shadow-cyan-700 fixed top-0 right-0 z-50 bg-[#f8f1ee] animate-${animate}`}
                     onAnimationEnd={handleAnimationEnd}
                 >
                     <button
-                        className="absolute top-4 right-4 text-2xl font-bold text-cyan-700 hover:text-cyan-900 focus:outline-none"
+                        className="absolute top-2 right-4 text-4xl font-bold text-cyan-700 hover:text-cyan-900 focus:outline-none"
                         onClick={handleClose}
                         aria-label="Close side drawer"
                     >
