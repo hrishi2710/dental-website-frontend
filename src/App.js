@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className='relative'>
-      <div className="flex flex-col relative">
+      <div className="flex flex-col relative pt-20 md:pt-24">
         <div className='w-full'>
           <Header openSideDrawerHandler={openSideDrawerHandler} />
           <Carousel />

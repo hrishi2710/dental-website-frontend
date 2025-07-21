@@ -5,7 +5,7 @@ import NavBarMenu from './menu/NavBarMenu';
 import MobileBookButton from './MobileBookButton';
 
 const Header = (props) => (
-  <header className="fixed top-0 left-0 w-full z-50 bg-[#f8f1ee] shadow-md">
+  <header className="fixed top-0 left-0 w-full z-50 bg-[#f8f1ee] shadow-md h-20 md:h-24">
     <div className="flex flex-row w-full">
       <LogoSection openSideDrawerHandler={props.openSideDrawerHandler} />
       <div className="flex-1 flex flex-col hidden md:flex">
