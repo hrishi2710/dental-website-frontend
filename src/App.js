@@ -6,6 +6,7 @@ import SideDrawerMenu from './components/menu/SideDrawerMenu';
 import Services from './components/Services/Services';
 import ContactFooter from './components/ContactFooter/ContactFooter';
 import AboutUs from './components/AboutUs/AboutUs';
+import ChooseUs from './components/ChooseUs/ChooseUs';
 
 function App() {
   let [showSideDrawerMenu, setShowSideDrawerMenu] = useState(false);
@@ -32,6 +33,7 @@ function App() {
       )}
       <SideDrawerMenu show={showSideDrawerMenu} onClose={closeSideDrawerHandler} />
       <AboutUs />
+      <ChooseUs />
       <ContactFooter />
     </div>
   );
