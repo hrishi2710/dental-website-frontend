@@ -1,6 +1,6 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTooth, faMoneyBillWave, faUserMd } from '@fortawesome/free-solid-svg-icons';
 import bgImage from '../../assets/ChooseUs/dentalCare.jpg';
+import FeatureCard from './FeatureCard';
 
 const features = [
   {
@@ -35,16 +35,8 @@ const ChooseUs = () => (
         We are the premier choice for all your dental needs. Trust us to help you achieve a healthy and beautiful smile.
       </p>
       <div className="w-full flex flex-col gap-8">
-        {features.map((f, i) => (
-          <div key={f.title} className="flex flex-row items-start gap-6">
-            <span className="flex-shrink-0 bg-[#6a2d13] rounded-full w-20 h-20 flex items-center justify-center text-4xl">
-              <FontAwesomeIcon icon={f.icon} />
-            </span>
-            <div>
-              <h4 className="text-xl font-bold mb-1 text-white">{f.title}</h4>
-              <p className="text-white text-base font-light">{f.desc}</p>
-            </div>
-          </div>
+        {features.map((f) => (
+          <FeatureCard key={f.title} icon={f.icon} title={f.title} desc={f.desc} />
         ))}
       </div>
     </div>
