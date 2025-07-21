@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTooth, faMoneyBillWave, faUserMd } from '@fortawesome/free-solid-svg-icons';
+import bgImage from '../../assets/ChooseUs/dentalCare.jpg';
 
 const features = [
   {
@@ -19,8 +20,6 @@ const features = [
   }
 ];
 
-const bgImage = 'https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1500&q=80';
-
 const ChooseUs = () => (
   <section
     className="relative w-full min-h-[600px] flex items-center justify-center py-16 px-4"
@@ -31,7 +30,7 @@ const ChooseUs = () => (
     {/* Content */}
     <div className="relative z-10 max-w-3xl mx-auto text-white flex flex-col items-center">
       <h2 className="text-3xl md:text-4xl font-semibold mb-2 text-white">Why Choose Us</h2>
-      <h3 className="text-xl md:text-2xl font-light mb-6 text-white">Best Dental Clinic in Bangalore That You Can Trust</h3>
+      <h3 className="text-xl md:text-2xl font-light mb-6 text-white text-center">Best & Most Advanced Dental Clinic in Vasai that You Can Trust</h3>
       <p className="mb-8 text-center text-white max-w-2xl">
         We are the premier choice for all your dental needs. Trust us to help you achieve a healthy and beautiful smile.
       </p>
