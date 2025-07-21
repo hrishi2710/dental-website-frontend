@@ -5,6 +5,7 @@ import Carousel from './components/Carousel';
 import SideDrawerMenu from './components/menu/SideDrawerMenu';
 import Services from './components/Services/Services';
 import ContactFooter from './components/ContactFooter/ContactFooter';
+import AboutUs from './components/AboutUs';
 
 function App() {
   let [showSideDrawerMenu, setShowSideDrawerMenu] = useState(false);
@@ -30,6 +31,7 @@ function App() {
         <div className="fixed inset-0 z-10 backdrop-blur-sm md:hidden" onClick={closeSideDrawerHandler}></div>
       )}
       <SideDrawerMenu show={showSideDrawerMenu} onClose={closeSideDrawerHandler} />
+      <AboutUs />
       <ContactFooter />
     </div>
   );
