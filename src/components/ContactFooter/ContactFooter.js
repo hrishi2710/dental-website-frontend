@@ -1,16 +1,18 @@
 import Logo from '../../assets/logo.png';
 import { faFacebookF, faInstagram, faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import SocialIcons from './SocialIcons';
-import FooterMenu from './FooterMenu';
+// import FooterMenu from './FooterMenu';
 
-const leftMenu = ["Home", "About", "Testimonials", "Contact Us"];
-const rightMenu = ["Blog", "Payments", "Privacy Policy"];
+// const leftMenu = ["Home", "About", "Testimonials", "Contact Us"];
+// const rightMenu = ["Blog", "Payments", "Privacy Policy"];
 
 const socialLinks = [
   { icon: faFacebookF, label: 'Facebook', href: '#' },
   { icon: faInstagram, label: 'Instagram', href: 'https://www.instagram.com/smile_withmds/' },
   { icon: faLinkedinIn, label: 'LinkedIn', href: '#' },
   { icon: faWhatsapp, label: 'WhatsApp', href: 'https://wa.me/919731869915?text=Hi%2C%20I%27m%20here%20for%20an%20enquiry%20about%20dental%20treatment.%20Please%20assist.' },
+  { icon: faEnvelope, label: 'Gmail', href: 'mailto:muskurahatdentalstudio@gmail.com' },
 ];
 
 const ContactFooter = () => (
