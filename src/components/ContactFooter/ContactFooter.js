@@ -8,7 +8,7 @@ const rightMenu = ["Blog", "Payments", "Privacy Policy"];
 
 const socialLinks = [
   { icon: faFacebookF, label: 'Facebook', href: '#' },
-  { icon: faInstagram, label: 'Instagram', href: '#' },
+  { icon: faInstagram, label: 'Instagram', href: 'https://www.instagram.com/smile_withmds/' },
   { icon: faLinkedinIn, label: 'LinkedIn', href: '#' },
   { icon: faWhatsapp, label: 'WhatsApp', href: '#' },
 ];
