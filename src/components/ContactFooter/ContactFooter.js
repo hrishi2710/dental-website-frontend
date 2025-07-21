@@ -10,7 +10,7 @@ const socialLinks = [
   { icon: faFacebookF, label: 'Facebook', href: '#' },
   { icon: faInstagram, label: 'Instagram', href: 'https://www.instagram.com/smile_withmds/' },
   { icon: faLinkedinIn, label: 'LinkedIn', href: '#' },
-  { icon: faWhatsapp, label: 'WhatsApp', href: 'https://wa.me/919731869915' },
+  { icon: faWhatsapp, label: 'WhatsApp', href: 'https://wa.me/919731869915?text=Hi%2C%20I%27m%20here%20for%20an%20enquiry%20about%20dental%20treatment.%20Please%20assist.' },
 ];
 
 const ContactFooter = () => (
