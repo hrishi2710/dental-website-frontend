@@ -5,7 +5,7 @@ import Carousel from './components/Carousel';
 import SideDrawerMenu from './components/menu/SideDrawerMenu';
 import Services from './components/Services/Services';
 import ContactFooter from './components/ContactFooter/ContactFooter';
-import AboutUs from './components/AboutUs';
+import AboutUs from './components/AboutUs/AboutUs';
 
 function App() {
   let [showSideDrawerMenu, setShowSideDrawerMenu] = useState(false);
