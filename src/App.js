@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Carousel from './components/Carousel';
 import SideDrawerMenu from './components/menu/SideDrawerMenu';
 import Services from './components/Services/Services';
-import ContactFooter from './components/ContactFooter';
+import ContactFooter from './components/ContactFooter/ContactFooter';
 
 function App() {
   let [showSideDrawerMenu, setShowSideDrawerMenu] = useState(false);
