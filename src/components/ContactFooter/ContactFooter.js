@@ -10,7 +10,7 @@ const socialLinks = [
   { icon: faFacebookF, label: 'Facebook', href: '#' },
   { icon: faInstagram, label: 'Instagram', href: 'https://www.instagram.com/smile_withmds/' },
   { icon: faLinkedinIn, label: 'LinkedIn', href: '#' },
-  { icon: faWhatsapp, label: 'WhatsApp', href: '#' },
+  { icon: faWhatsapp, label: 'WhatsApp', href: 'https://wa.me/919731869915' },
 ];
 
 const ContactFooter = () => (
