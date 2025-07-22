@@ -1,6 +1,7 @@
 import React from 'react';
 import Introduction from './Introduction';
 import WhatSection from './WhatSection';
+import HowDoesItHelp from './HowDoesItHelp';
 
 const ServicePage = () => {
   return (
@@ -15,6 +16,11 @@ const ServicePage = () => {
         heading="What is bone grafting?"
         description={`Oftentimes, in the case of periodontal disease, dental infections or traumatic injuries, bone and soft tissue may atrophy in areas around the diseased teeth as a result. This process of bone loss is accelerated when teeth are missing, and nothing is done to replace the stimulation that a tooth root provides. When the quality and quantity of bone is inadequate for the placement of dental implants, the deteriorated bone must be replaced.`}
         image="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+      />
+      <HowDoesItHelp
+        heading="How does it help?"
+        description={"Due to the development of advanced techniques over the years, we now have the ability to grow bone where it is needed, enabling us to replace missing teeth with dental implants, even for patients with significant bone loss."}
+        image="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80"
       />
     </>
   );
