@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Carousel from './components/Carousel';
@@ -7,11 +7,16 @@ import Services from './components/Services/Services';
 import ContactFooter from './components/ContactFooter/ContactFooter';
 import AboutUs from './components/AboutUs/AboutUs';
 import ChooseUs from './components/ChooseUs/ChooseUs';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import ServicePageEntry from './components/Services/IndividualServices/ServicePageEntry';
 
 function App() {
   let [showSideDrawerMenu, setShowSideDrawerMenu] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   let closeSideDrawerHandler = () => {
     setShowSideDrawerMenu(false);
