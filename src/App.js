@@ -23,20 +23,20 @@ function App() {
 
   return (
     <div className='relative'>
-      <Routes>
-        <Route path="/services/:serviceLabel" element={<ServicePage />} />
-        <Route path="/" element={
-          <div className="flex flex-col relative pt-20 md:pt-24">
-            <div className='w-full'>
-              <Header openSideDrawerHandler={openSideDrawerHandler} />
+      <Header openSideDrawerHandler={openSideDrawerHandler} />
+      <div className="pt-20 md:pt-24">
+        <Routes>
+          <Route path="/services/:serviceLabel" element={<ServicePage />} />
+          <Route path="/" element={
+            <div>
               <Carousel />
               <Services />
               <AboutUs />
               <ChooseUs />
             </div>
-          </div>
-        } />
-      </Routes>
+          } />
+        </Routes>
+      </div>
       {showSideDrawerMenu && (
         <div className="fixed inset-0 z-10 backdrop-blur-sm md:hidden" onClick={closeSideDrawerHandler}></div>
       )}
