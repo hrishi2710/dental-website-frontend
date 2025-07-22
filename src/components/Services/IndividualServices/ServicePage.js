@@ -3,11 +3,9 @@ import Introduction from './Introduction';
 import WhatSection from './WhatSection';
 import HowDoesItHelp from './HowDoesItHelp';
 import Cases from './Cases';
-import ServicesUtils from './IndividualServicesUtils';
 
-const data = ServicesUtils[0];
-
-const ServicePage = () => {
+const ServicePage = (props) => {
+  const data = props.data;
   return (
     <>
       <Introduction

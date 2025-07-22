@@ -8,7 +8,7 @@ import ContactFooter from './components/ContactFooter/ContactFooter';
 import AboutUs from './components/AboutUs/AboutUs';
 import ChooseUs from './components/ChooseUs/ChooseUs';
 import { Routes, Route } from 'react-router-dom';
-import ServicePage from './components/Services/IndividualServices/ServicePage';
+import ServicePageEntry from './components/Services/IndividualServices/ServicePageEntry';
 
 function App() {
   let [showSideDrawerMenu, setShowSideDrawerMenu] = useState(false);
@@ -26,7 +26,7 @@ function App() {
       <Header openSideDrawerHandler={openSideDrawerHandler} />
       <div className="pt-20 md:pt-24">
         <Routes>
-          <Route path="/services/:serviceLabel" element={<ServicePage />} />
+          <Route path="/services/:serviceLabel" element={<ServicePageEntry />} />
           <Route path="/" element={
             <div>
               <Carousel />

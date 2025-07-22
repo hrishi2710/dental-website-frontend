@@ -1,7 +1,7 @@
 const ServicesUtils = {
     "general-dentistry": {
         Introduction: {
-            subHeading: "Implants",
+            subHeading: "General Dentistry",
             heading: "Get The Best Dental Implants in Mumbai",
             description: `Don’t wait to get the dental implants you need and deserve—get them now with the best care offered at India's top clinic in Mumbai. Say goodbye to awkwardness and discomfort due to teeth that are out-of-shape and say hello to optimal beauty with permanent dental implants. Enjoy comfort, convenience, reliability, affordability, and outstanding results when getting The Best Dental Implants. So don't delay—book an appointment today and start your journey toward a healthy smile!`,
             image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80"
@@ -39,7 +39,7 @@ const ServicesUtils = {
     },
     "digital-dentistry": {
         Introduction: {
-            subHeading: "Implants",
+            subHeading: "Digital Dentistry",
             heading: "Get The Best Dental Implants in Mumbai",
             description: `Don’t wait to get the dental implants you need and deserve—get them now with the best care offered at India's top clinic in Mumbai. Say goodbye to awkwardness and discomfort due to teeth that are out-of-shape and say hello to optimal beauty with permanent dental implants. Enjoy comfort, convenience, reliability, affordability, and outstanding results when getting The Best Dental Implants. So don't delay—book an appointment today and start your journey toward a healthy smile!`,
             image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80"
@@ -77,7 +77,7 @@ const ServicesUtils = {
     },
     "implants": {
         Introduction: {
-            subHeading: "Implants",
+            subHeading: "Dental Implants",
             heading: "Get The Best Dental Implants in Mumbai",
             description: `Don’t wait to get the dental implants you need and deserve—get them now with the best care offered at India's top clinic in Mumbai. Say goodbye to awkwardness and discomfort due to teeth that are out-of-shape and say hello to optimal beauty with permanent dental implants. Enjoy comfort, convenience, reliability, affordability, and outstanding results when getting The Best Dental Implants. So don't delay—book an appointment today and start your journey toward a healthy smile!`,
             image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80"
@@ -115,7 +115,7 @@ const ServicesUtils = {
     },
     "smile-designing": {
         Introduction: {
-            subHeading: "Implants",
+            subHeading: "Smile Designing",
             heading: "Get The Best Dental Implants in Mumbai",
             description: `Don’t wait to get the dental implants you need and deserve—get them now with the best care offered at India's top clinic in Mumbai. Say goodbye to awkwardness and discomfort due to teeth that are out-of-shape and say hello to optimal beauty with permanent dental implants. Enjoy comfort, convenience, reliability, affordability, and outstanding results when getting The Best Dental Implants. So don't delay—book an appointment today and start your journey toward a healthy smile!`,
             image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80"
@@ -153,7 +153,7 @@ const ServicesUtils = {
     },
     "dentures": {
         Introduction: {
-            subHeading: "Implants",
+            subHeading: "Dentures",
             heading: "Get The Best Dental Implants in Mumbai",
             description: `Don’t wait to get the dental implants you need and deserve—get them now with the best care offered at India's top clinic in Mumbai. Say goodbye to awkwardness and discomfort due to teeth that are out-of-shape and say hello to optimal beauty with permanent dental implants. Enjoy comfort, convenience, reliability, affordability, and outstanding results when getting The Best Dental Implants. So don't delay—book an appointment today and start your journey toward a healthy smile!`,
             image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80"
@@ -191,7 +191,7 @@ const ServicesUtils = {
     },
     "gums-treatment": {
         Introduction: {
-            subHeading: "Implants",
+            subHeading: "Gums Treatment",
             heading: "Get The Best Dental Implants in Mumbai",
             description: `Don’t wait to get the dental implants you need and deserve—get them now with the best care offered at India's top clinic in Mumbai. Say goodbye to awkwardness and discomfort due to teeth that are out-of-shape and say hello to optimal beauty with permanent dental implants. Enjoy comfort, convenience, reliability, affordability, and outstanding results when getting The Best Dental Implants. So don't delay—book an appointment today and start your journey toward a healthy smile!`,
             image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80"
@@ -229,7 +229,7 @@ const ServicesUtils = {
     },
     "crowns-and-veneers": {
         Introduction: {
-            subHeading: "Implants",
+            subHeading: "Crowns and Veneers",
             heading: "Get The Best Dental Implants in Mumbai",
             description: `Don’t wait to get the dental implants you need and deserve—get them now with the best care offered at India's top clinic in Mumbai. Say goodbye to awkwardness and discomfort due to teeth that are out-of-shape and say hello to optimal beauty with permanent dental implants. Enjoy comfort, convenience, reliability, affordability, and outstanding results when getting The Best Dental Implants. So don't delay—book an appointment today and start your journey toward a healthy smile!`,
             image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80"
@@ -267,7 +267,7 @@ const ServicesUtils = {
     },
     "root-canal": {
         Introduction: {
-            subHeading: "Implants",
+            subHeading: "Root Canal",
             heading: "Get The Best Dental Implants in Mumbai",
             description: `Don’t wait to get the dental implants you need and deserve—get them now with the best care offered at India's top clinic in Mumbai. Say goodbye to awkwardness and discomfort due to teeth that are out-of-shape and say hello to optimal beauty with permanent dental implants. Enjoy comfort, convenience, reliability, affordability, and outstanding results when getting The Best Dental Implants. So don't delay—book an appointment today and start your journey toward a healthy smile!`,
             image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80"
@@ -305,7 +305,7 @@ const ServicesUtils = {
     },
     "eye-prosthesis": {
         Introduction: {
-            subHeading: "Implants",
+            subHeading: "Eye Prosthesis",
             heading: "Get The Best Dental Implants in Mumbai",
             description: `Don’t wait to get the dental implants you need and deserve—get them now with the best care offered at India's top clinic in Mumbai. Say goodbye to awkwardness and discomfort due to teeth that are out-of-shape and say hello to optimal beauty with permanent dental implants. Enjoy comfort, convenience, reliability, affordability, and outstanding results when getting The Best Dental Implants. So don't delay—book an appointment today and start your journey toward a healthy smile!`,
             image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80"
@@ -343,7 +343,7 @@ const ServicesUtils = {
     },
     "full-mouth-rehabilitation": {
         Introduction: {
-            subHeading: "Implants",
+            subHeading: "Full Mouth Rehabilitation",
             heading: "Get The Best Dental Implants in Mumbai",
             description: `Don’t wait to get the dental implants you need and deserve—get them now with the best care offered at India's top clinic in Mumbai. Say goodbye to awkwardness and discomfort due to teeth that are out-of-shape and say hello to optimal beauty with permanent dental implants. Enjoy comfort, convenience, reliability, affordability, and outstanding results when getting The Best Dental Implants. So don't delay—book an appointment today and start your journey toward a healthy smile!`,
             image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80"
