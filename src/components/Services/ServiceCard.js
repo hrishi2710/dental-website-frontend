@@ -18,18 +18,21 @@ const ServiceCard = ({ image, label, onClick }) => {
   return (
     <div
       ref={ref}
-      className={`flex flex-col items-center cursor-pointer transition-all duration-700 ease-out transform ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'}`}
+      className={`w-80 rounded-3xl shadow-xl flex flex-col items-center transition-all duration-700 ease-out transform ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'} hover:shadow-2xl hover:-translate-y-2 cursor-pointer`}
       onClick={onClick}
+      style={{ minWidth: '20rem' }}
     >
-      <div className="w-80 h-80 rounded-2xl border-2 border-[#995023] overflow-hidden flex items-center justify-center">
+      <div className="relative w-full" style={{ aspectRatio: '1 / 1' }}>
         <img
           src={image}
           alt={label}
-          className="object-cover w-full h-full"
+          className="object-cover w-full h-full rounded-2xl"
         />
-      </div>
-      <div className="mt-4 px-6 py-3 rounded-2xl border-2 border-[#995023] bg-white -translate-y-6 shadow text-center w-80">
-        <span className="text-xl font-semibold text-gray-900">{label}</span>
+        <div className="absolute left-1/2 bottom-0 -translate-x-1/2 translate-y-1/2 z-10">
+          <span className="px-8 py-3 rounded-full bg-white/70 border border-white text-xl font-bold text-gray-900 whitespace-nowrap overflow-hidden text-ellipsis">
+            {label}
+          </span>
+        </div>
       </div>
     </div>
   );
