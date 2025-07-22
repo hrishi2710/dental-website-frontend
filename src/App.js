@@ -7,6 +7,8 @@ import Services from './components/Services/Services';
 import ContactFooter from './components/ContactFooter/ContactFooter';
 import AboutUs from './components/AboutUs/AboutUs';
 import ChooseUs from './components/ChooseUs/ChooseUs';
+import { Routes, Route } from 'react-router-dom';
+import ServicePage from './components/Services/IndividualServices/ServicePage';
 
 function App() {
   let [showSideDrawerMenu, setShowSideDrawerMenu] = useState(false);
@@ -21,19 +23,24 @@ function App() {
 
   return (
     <div className='relative'>
-      <div className="flex flex-col relative pt-20 md:pt-24">
-        <div className='w-full'>
-          <Header openSideDrawerHandler={openSideDrawerHandler} />
-          <Carousel />
-          <Services />
-        </div>
-      </div>
+      <Routes>
+        <Route path="/services/:serviceLabel" element={<ServicePage />} />
+        <Route path="/" element={
+          <div className="flex flex-col relative pt-20 md:pt-24">
+            <div className='w-full'>
+              <Header openSideDrawerHandler={openSideDrawerHandler} />
+              <Carousel />
+              <Services />
+              <AboutUs />
+              <ChooseUs />
+            </div>
+          </div>
+        } />
+      </Routes>
       {showSideDrawerMenu && (
         <div className="fixed inset-0 z-10 backdrop-blur-sm md:hidden" onClick={closeSideDrawerHandler}></div>
       )}
       <SideDrawerMenu show={showSideDrawerMenu} onClose={closeSideDrawerHandler} />
-      <AboutUs />
-      <ChooseUs />
       <ContactFooter />
     </div>
   );
