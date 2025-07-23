@@ -9,6 +9,10 @@ const NavBarMenu = () => (
       {menuItems.map((menuItem) => (
         menuItem === 'Services' ? (
           <ServicesDropDownMenu key={menuItem} services={services} />
+        ) : menuItem === 'Contact Us' ? (
+          <li key={menuItem}>
+            <Link to="/contact-us" className="hover:text-cyan-500 cursor-pointer">{menuItem}</Link>
+          </li>
         ) : (
           <li className="hover:text-cyan-500 cursor-pointer" key={menuItem}>{menuItem}</li>
         )

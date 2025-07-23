@@ -52,6 +52,17 @@ const SideDrawerMenu = (props) => {
                             >
                                 {menuItem}
                             </Link>
+                        ) : menuItem === 'Contact Us' ? (
+                            <Link
+                                to="/contact-us"
+                                key={menuItem}
+                                className="box-border border-2 border-t-0 border-r-0 border-l-0 w-full flex items-center justify-center py-4 text-lg font-semibold text-center focus:outline-none bg-transparent"
+                                onClick={handleClose}
+                                tabIndex={0}
+                                style={{ appearance: 'none' }}
+                            >
+                                {menuItem}
+                            </Link>
                         ) : (
                             <button
                                 className="box-border border-2 border-t-0 border-r-0 border-l-0 w-full flex items-center justify-center py-4 text-lg font-semibold text-center focus:outline-none bg-transparent"

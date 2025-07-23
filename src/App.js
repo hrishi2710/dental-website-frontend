@@ -10,6 +10,7 @@ import ChooseUs from './components/ChooseUs/ChooseUs';
 import TeamEntry from './components/Team/TeamEntry';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import ServicePageEntry from './components/Services/IndividualServices/ServicePageEntry';
+import ContactUs from './components/ContactUs/ContactUs';
 
 function App() {
   let [showSideDrawerMenu, setShowSideDrawerMenu] = useState(false);
@@ -33,6 +34,7 @@ function App() {
       <div className="pt-20 md:pt-24">
         <Routes>
           <Route path="/services/:serviceLabel" element={<ServicePageEntry />} />
+          <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/" element={
             <div>
               <Carousel />
