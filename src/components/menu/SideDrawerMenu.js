@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import services from '../Services/ServiceUtils';
+import SideDrawerServicesDropDownMenu from './SideDrawerServicesDropDownMenu';
 // Menu items can be inlined for clarity
 const menuItmes = ["Home", "Services", "Case History", "Blog", "Testimonials", "Contact Us"];
 
@@ -37,12 +39,18 @@ const SideDrawerMenu = (props) => {
                         &times;
                     </button>
                     {menuItmes.map((menuItem) => (
-                        <div
-                            className="box-border border-2 py-4 border-t-0 border-r-0 border-l-0 text-center text-lg"
-                            key={menuItem}
-                        >
-                            {menuItem}
-                        </div>
+                        menuItem === 'Services' ? (
+                            <SideDrawerServicesDropDownMenu key={menuItem} services={services} onNavigate={handleClose} />
+                        ) : (
+                            <button
+                                className="box-border border-2 border-t-0 border-r-0 border-l-0 w-full flex items-center justify-center py-4 text-lg font-semibold text-center focus:outline-none bg-transparent"
+                                key={menuItem}
+                                tabIndex={0}
+                                style={{ appearance: 'none' }}
+                            >
+                                {menuItem}
+                            </button>
+                        )
                     ))}
                 </div>
             )}
