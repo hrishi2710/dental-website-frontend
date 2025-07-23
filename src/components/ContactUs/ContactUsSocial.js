@@ -44,24 +44,35 @@ const iconCircleClass =
 const ContactUsSocial = () => (
   <div className="max-w-lg px-4 py-8">
     <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Let’s connect</h2>
-    <p className="text-lg text-gray-700 mb-10">{`We are dedicated to enhancing and providing better oral health care. Are you?\nIf yes, Click on the any contact link below and get started.`}</p>
+    <p className="text-lg text-gray-700 mb-10">
+      We are dedicated to enhancing and providing better oral health care. Are you?
+      <br />
+      Click on the any contact link below and get started.
+    </p>
     <div className="space-y-8 mb-8">
       {contactInfo.map((item, idx) => (
         <div key={idx} className="flex items-center gap-6">
-          <span className={iconCircleClass}>
-            <FontAwesomeIcon icon={item.icon} />
-          </span>
           {item.href ? (
             <a
               href={item.href}
-              className={`text-lg md:text-xl text-gray-900 font-bold`}
               target={item.href.startsWith('http') ? '_blank' : undefined}
               rel="noopener noreferrer"
+              className="flex items-center gap-6 group"
             >
-              {item.label}
+              <span className={iconCircleClass + " group-hover:bg-[#7c3f18] transition-colors"}>
+                <FontAwesomeIcon icon={item.icon} />
+              </span>
+              <span className="text-lg md:text-xl text-gray-900 font-bold">
+                {item.label}
+              </span>
             </a>
           ) : (
-            <span className={`text-lg md:text-xl text-gray-900 font-bold`}>{item.label}</span>
+            <>
+              <span className={iconCircleClass}>
+                <FontAwesomeIcon icon={item.icon} />
+              </span>
+              <span className="text-lg md:text-xl text-gray-900 font-bold">{item.label}</span>
+            </>
           )}
         </div>
       ))}
