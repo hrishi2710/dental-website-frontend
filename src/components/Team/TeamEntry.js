@@ -9,7 +9,7 @@ const teamMembers = [
     name: 'Dr. Manorama Vijay Singh',
     title: 'Exprience 7+ years',
     details:
-      'Prosthodontist & Implantologist\nMDS in Prosthodontics (Mangalore).\nBDS (Belgavai)',
+      'Prosthodontist & Implantologist\nMDS in Prosthodontics (Mangalore).\nBDS (Belagavi)',
     image: img1,
   },
 //   {

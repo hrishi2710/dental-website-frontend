@@ -18,7 +18,7 @@ const storyContent = [
 const images = [chairImg, receptionImg, workingBackImg, workingFrontImg];
 
 const docHeading = 'Dr. Manorama Vijay Singh';
-const docContent = `Prosthodontist & Implantologist\nMDS in Prosthodontics (Mangalore)\nBDS (Belgavai)\nExperience: 7+ years\nPassionate about providing the best dental care for every patient.`;
+const docContent = `Prosthodontist & Implantologist\nMDS in Prosthodontics (Mangalore)\nBDS (Belagavi)\nExperience: 7+ years\nPassionate about providing the best dental care for every patient.`;
 
 const AboutUs = () => (
   <div>
