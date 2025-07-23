@@ -1,17 +1,10 @@
-import AboutImagesGrid from './AboutImagesGrid';
-import AboutText from './AboutText';
-import Chair from '../../assets/AboutUs/Chair.jpg';
-import Reception from '../../assets/AboutUs/Reception.jpg';
-import WorkingBack from '../../assets/AboutUs/Working_back.jpg';
-import WorkingFront from '../../assets/AboutUs/Working_Front.jpg';
-
-const aboutImages = [Chair, Reception, WorkingBack, WorkingFront];
+import React from 'react';
 
 const AboutUs = () => (
-  <section className="w-full bg-white py-16 px-4 flex flex-col md:flex-row items-center justify-center gap-8 max-w-7xl mx-auto">
-    <AboutImagesGrid images={aboutImages} />
-    <AboutText />
-  </section>
+  <div className="min-h-[40vh] flex flex-col items-center justify-center py-16">
+    <h1 className="text-3xl font-bold mb-4">About Us</h1>
+    <p className="text-gray-600">This is a placeholder for the About Us page.</p>
+  </div>
 );
 
 export default AboutUs; 

@@ -13,6 +13,10 @@ const NavBarMenu = () => (
           <li key={menuItem}>
             <Link to="/contact-us" className="hover:text-cyan-500 cursor-pointer">{menuItem}</Link>
           </li>
+        ) : menuItem === 'About us' ? (
+          <li key={menuItem}>
+            <Link to="/about-us" className="hover:text-cyan-500 cursor-pointer">{menuItem}</Link>
+          </li>
         ) : menuItem === 'Home' ? (
           <li key={menuItem}>
             <Link to="/" className="hover:text-cyan-500 cursor-pointer">{menuItem}</Link>

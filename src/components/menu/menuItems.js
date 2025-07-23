@@ -1,3 +1,3 @@
-const menuItmes = ["Home", "Services", "Case History", "Blog", "Testimonials", "Dental Tourism", "Contact Us"];
+const menuItmes = ["Home", "Services", "Blog", "Testimonials", "Dental Tourism", "About us", "Contact Us"];
 
 export default menuItmes;
