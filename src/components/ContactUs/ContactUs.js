@@ -10,7 +10,7 @@ const ContactUs = () => (
       <div className="flex-1 flex flex-col justify-center">
         <ContactUsSocial />
       </div>
-      <div className="hidden md:flex flex-col justify-center items-center px-2">
+      <div className="flex flex-col justify-center items-center my-6 md:my-0 md:px-2">
         <div className="text-2xl font-bold text-[#7c3f18] mb-2">or</div>
       </div>
       <div className="flex-1 flex flex-col justify-center">
