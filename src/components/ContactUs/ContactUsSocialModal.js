@@ -2,10 +2,23 @@ import React from 'react';
 import ContactUsSocial from './ContactUsSocial';
 
 const ContactUsSocialModal = ({ open, onClose, onFillForm }) => {
-  if (!open) return null;
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-40">
-      <div className="relative w-full max-w-md mx-2">
+    <div
+      className={
+        (open
+          ? 'opacity-100 pointer-events-auto'
+          : 'opacity-0 pointer-events-none') +
+        ' fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-40 transition-opacity duration-300'
+      }
+    >
+      <div
+        className={
+          (open
+            ? 'scale-100 opacity-100'
+            : 'scale-95 opacity-0') +
+          ' relative w-full max-w-md mx-2 transition-all duration-300 ease-in-out'
+        }
+      >
         <button
           className="absolute top-2 right-2 text-2xl text-gray-400 hover:text-[#7c3f18] font-bold z-10"
           onClick={onClose}
