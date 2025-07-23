@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import services from '../Services/ServiceUtils';
 import SideDrawerServicesDropDownMenu from './SideDrawerServicesDropDownMenu';
-// Menu items can be inlined for clarity
-const menuItmes = ["Home", "Services", "Case History", "Blog", "Testimonials", "Contact Us"];
+import menuItmes from './menuItems';
+import { Link } from 'react-router-dom';
 
 const SideDrawerMenu = (props) => {
     const [animate, setAnimate] = useState('slide-in-right');
@@ -41,6 +41,17 @@ const SideDrawerMenu = (props) => {
                     {menuItmes.map((menuItem) => (
                         menuItem === 'Services' ? (
                             <SideDrawerServicesDropDownMenu key={menuItem} services={services} onNavigate={handleClose} />
+                        ) : menuItem === 'Home' ? (
+                            <Link
+                                to="/"
+                                key={menuItem}
+                                className="box-border border-2 border-t-0 border-r-0 border-l-0 w-full flex items-center justify-center py-4 text-lg font-semibold text-center focus:outline-none bg-transparent"
+                                onClick={handleClose}
+                                tabIndex={0}
+                                style={{ appearance: 'none' }}
+                            >
+                                {menuItem}
+                            </Link>
                         ) : (
                             <button
                                 className="box-border border-2 border-t-0 border-r-0 border-l-0 w-full flex items-center justify-center py-4 text-lg font-semibold text-center focus:outline-none bg-transparent"
