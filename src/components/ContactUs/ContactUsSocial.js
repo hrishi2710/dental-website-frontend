@@ -43,11 +43,11 @@ const iconCircleClass =
 
 const ContactUsSocial = () => (
   <div className="max-w-lg px-4 py-8">
-    <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Let’s connect</h2>
+    <h2 className="text-4xl md:text-5xl font-bold text-[#7c3f18] mb-4">Let’s connect</h2>
     <p className="text-lg text-gray-700 mb-10">
       We are dedicated to enhancing and providing better oral health care. Are you?
       <br />
-      Click on the any contact link below and get started.
+      <b>Click on the any contact link below and get started.</b>
     </p>
     <div className="space-y-8 mb-8">
       {contactInfo.map((item, idx) => (
