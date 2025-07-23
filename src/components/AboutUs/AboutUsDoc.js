@@ -47,11 +47,11 @@ const AboutUsDoc = ({ image, heading, content }) => {
       </div>
       {/* Right: Heading and Content */}
       <div className="flex-1 flex flex-col items-start justify-center">
-          <h2 className="text-4xl md:text-5xl font-light text-[#7c3f18] mb-1 flex items-end gap-2">
-            <span className="font-light">Meet</span>
-            <span className="font-extrabold whitespace-nowrap">{heading}</span>
-          </h2>
-          <div className="w-16 h-1 bg-[#b97a56] rounded mb-6" />
+        <h2 className="text-4xl md:text-5xl font-light text-[#7c3f18] mb-1 flex flex-col items-start w-full">
+          <span className="font-light block">Meet</span>
+          <span className="font-extrabold block text-[#7c3f18] border-b-4 border-[#b97a56] pb-1 mt-1 whitespace-normal">{heading}</span>
+        </h2>
+        <div className="mb-4" />
         <p className="text-lg md:text-xl text-gray-800 mb-2 whitespace-pre-line">{content}</p>
       </div>
     </div>
