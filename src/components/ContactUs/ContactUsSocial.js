@@ -36,48 +36,48 @@ const contactInfo = [
   },
 ];
 
-// const iconCircleClass =
-//   'bg-[#a2501c] text-white rounded-full w-14 h-14 flex items-center justify-center text-xl';
-const iconCircleClass =
-  'bg-[#a2501c] text-white rounded-full flex items-center justify-center w-14 h-14 aspect-square shadow-sm border border-gray-100';
-
-const ContactUsSocial = () => (
-  <div className="max-w-lg px-4 py-8">
-    <h2 className="text-4xl md:text-5xl font-bold text-[#7c3f18] mb-4">Let’s connect</h2>
-    <p className="text-lg text-gray-700 mb-10">
-      We are dedicated to enhancing and providing better oral health care. Are you?
-      <br />
-      <b>Click on the any contact link below and get started.</b>
-    </p>
-    <div className="space-y-8 mb-8">
-      {contactInfo.map((item, idx) => (
-        <div key={idx} className="flex items-center gap-6">
-          {item.href ? (
-            <a
-              href={item.href}
-              target={item.href.startsWith('http') ? '_blank' : undefined}
-              rel="noopener noreferrer"
-              className="flex items-center gap-6 group"
-            >
-              <span className={iconCircleClass + " group-hover:bg-[#7c3f18] transition-colors"}>
-                <FontAwesomeIcon icon={item.icon} />
-              </span>
-              <span className="text-lg md:text-xl text-gray-900 font-bold">
-                {item.label}
-              </span>
-            </a>
-          ) : (
-            <>
-              <span className={iconCircleClass}>
-                <FontAwesomeIcon icon={item.icon} />
-              </span>
-              <span className="text-lg md:text-xl text-gray-900 font-bold">{item.label}</span>
-            </>
-          )}
-        </div>
-      ))}
+const ContactUsSocial = ({ small }) => {
+  const iconCircleClass = small
+    ? 'bg-[#a2501c] text-white rounded-full flex items-center justify-center w-10 h-10 aspect-square shadow-sm border border-gray-100 text-base'
+    : 'bg-[#a2501c] text-white rounded-full flex items-center justify-center w-14 h-14 aspect-square shadow-sm border border-gray-100 text-xl';
+  return (
+    <div className={small ? 'max-w-xs px-2 py-4' : 'max-w-lg px-4 py-8'}>
+      <h2 className={small ? 'text-2xl font-bold text-[#7c3f18] mb-2' : 'text-4xl md:text-5xl font-bold text-[#7c3f18] mb-4'}>Let’s connect</h2>
+      <p className={small ? 'text-sm text-gray-700 mb-6' : 'text-lg text-gray-700 mb-10'}>
+        We are dedicated to enhancing and providing better oral health care. Are you?
+        <br />
+        <b>Click on the any contact link below and get started.</b>
+      </p>
+      <div className={small ? 'space-y-4 mb-4' : 'space-y-8 mb-8'}>
+        {contactInfo.map((item, idx) => (
+          <div key={idx} className={small ? 'flex items-center gap-4' : 'flex items-center gap-6'}>
+            {item.href ? (
+              <a
+                href={item.href}
+                target={item.href.startsWith('http') ? '_blank' : undefined}
+                rel="noopener noreferrer"
+                className={small ? 'flex items-center gap-4 group' : 'flex items-center gap-6 group'}
+              >
+                <span className={iconCircleClass + ' group-hover:bg-[#7c3f18] transition-colors'}>
+                  <FontAwesomeIcon icon={item.icon} />
+                </span>
+                <span className={small ? 'text-base text-gray-900 font-bold' : 'text-lg md:text-xl text-gray-900 font-bold'}>
+                  {item.label}
+                </span>
+              </a>
+            ) : (
+              <>
+                <span className={iconCircleClass}>
+                  <FontAwesomeIcon icon={item.icon} />
+                </span>
+                <span className={small ? 'text-base text-gray-900 font-bold' : 'text-lg md:text-xl text-gray-900 font-bold'}>{item.label}</span>
+              </>
+            )}
+          </div>
+        ))}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default ContactUsSocial;

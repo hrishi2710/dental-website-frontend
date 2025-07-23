@@ -12,13 +12,13 @@ const Header = (props) => (
         <div className="flex flex-row items-center justify-between px-6 py-2 w-full bg-[#f8f1ee]">
           <ContactInfo />
           <div className="hidden md:flex justify-end flex-shrink-0 ml-8">
-            <BookAppointmentButton />
+            <BookAppointmentButton onClick={props.onBookAppointment} />
           </div>
         </div>
         <NavBarMenu />
       </div>
     </div>
-    <MobileBookButton />
+    <MobileBookButton onClick={props.onBookAppointment} />
   </header>
 );
 
