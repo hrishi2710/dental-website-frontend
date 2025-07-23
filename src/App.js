@@ -7,6 +7,7 @@ import Services from './components/Services/Services';
 import ContactFooter from './components/ContactFooter/ContactFooter';
 import AboutUs from './components/AboutUs/AboutUs';
 import ChooseUs from './components/ChooseUs/ChooseUs';
+import TeamEntry from './components/Team/TeamEntry';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import ServicePageEntry from './components/Services/IndividualServices/ServicePageEntry';
 
@@ -36,6 +37,7 @@ function App() {
             <div>
               <Carousel />
               <Services />
+              <TeamEntry />
               <AboutUs />
               <ChooseUs />
             </div>
