@@ -11,7 +11,7 @@ const AboutUsHeader = () => (
     />
     <div className="absolute inset-0 bg-black bg-opacity-60 z-10 rounded-3xl" />
     <div className="relative z-20 flex flex-col items-start justify-center h-full pl-8 md:pl-16">
-      <div className="text-white text-2xl md:text-3xl font-light mb-2">get to know</div>
+      <div className="text-white text-2xl md:text-3xl font-light mb-2">Get to know</div>
       <div className="text-white text-4xl md:text-5xl font-extrabold mb-6">Muskurahat Dental Studio team</div>
       <div className="flex flex-row gap-4">
         <button className="bg-[#b97a56] hover:bg-[#a05f3c] text-white font-semibold px-8 py-3 rounded-md text-lg shadow transition-colors">Book now</button>
