@@ -40,7 +40,7 @@ const ContactUsForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     // Validate mandatory fields
-    const mandatoryFields = ["First Name", "Phone", "Email", "Date", "Time Slot"];
+    const mandatoryFields = ["First Name", "Phone", "Date", "Time Slot"];
     const newErrors = {};
     mandatoryFields.forEach((field) => {
       if (!formData[field] || formData[field].trim() === "") {
@@ -49,7 +49,7 @@ const ContactUsForm = () => {
     });
     // Phone validation: must be 10 digits, all numbers
     if (formData["Phone"] && !/^\d{10}$/.test(formData["Phone"])) {
-      newErrors["Phone"] = 'Phone no. should be proper';
+      newErrors["Phone"] = '10 digits number required';
     }
     setErrors(newErrors);
     if (Object.keys(newErrors).length > 0) {
@@ -143,7 +143,7 @@ const ContactUsForm = () => {
             {errors["Phone"] && <p className="text-red-600 text-sm mt-1">{errors["Phone"]}</p>}
           </div>
           <div>
-            <label className="block text-[#7c3f18] font-semibold mb-1">Your Email <span className="text-red-600">*</span></label>
+            <label className="block text-[#7c3f18] font-semibold mb-1">Your Email</label>
             <input
               type="email"
               name="Email"
