@@ -30,6 +30,9 @@ const ContactUsForm = () => {
 
   const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxMbmquT76dwgLc9Vapg2jvZ2USboKRJEIiSnLJfo0a5e0SB4FRKoiWCWWhCilp66Mh/exec';
 
+  // Get today's date in YYYY-MM-DD format for min attribute
+  const todayStr = new Date().toISOString().split('T')[0];
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -160,6 +163,7 @@ const ContactUsForm = () => {
               name="Date"
               value={formData["Date"]}
               onChange={handleChange}
+              min={todayStr}
               className="w-full border-b-2 border-gray-200 focus:border-[#984e20] outline-none py-2"
             />
             {errors["Date"] && <p className="text-red-600 text-sm mt-1">{errors["Date"]}</p>}
