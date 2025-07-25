@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react';
+import SmileImage from '../assets/HomePage/Caraousel/Smile_L.jpg';
+import LogoImage from '../assets/HomePage/Caraousel/Logo_L_Bright.jpg';
+import TeethImage from '../assets/HomePage/Caraousel/Teeth.jpg';
 
 const images = [
-  'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80',
-  'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80',
-  'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80',
+  SmileImage,
+  LogoImage,
+  TeethImage,
 ];
 
 const Carousel = () => {
