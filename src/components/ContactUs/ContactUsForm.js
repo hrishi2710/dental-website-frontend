@@ -47,6 +47,10 @@ const ContactUsForm = () => {
         newErrors[field] = 'This field is required.';
       }
     });
+    // Phone validation: must be 10 digits, all numbers
+    if (formData["Phone"] && !/^\d{10}$/.test(formData["Phone"])) {
+      newErrors["Phone"] = 'Phone no. should be proper';
+    }
     setErrors(newErrors);
     if (Object.keys(newErrors).length > 0) {
       // Focus the first error field
